@@ -157,7 +157,7 @@ recNome _ [] = "Email desconhecido"
 recNome x ((n, _, _, em):xs) = if (x == em) then n else (recNome x xs)
 
 --15-
-
+    type Pessoa = (String, Float, Int, Char)
     tamanho :: [Pessoa] -> Float
     tamanho [] = 0
     tamanho (x:xs) = 1 + (tamanho xs)
