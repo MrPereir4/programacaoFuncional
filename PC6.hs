@@ -99,8 +99,6 @@ quicksort [] = []
 quicksort (s:xs) = quicksort [x | x <- xs, x < s]
     ++ [s] ++
     quicksort [x|x <- xs, x >= s]
-    
---
 
 --11
 --bubblesort
